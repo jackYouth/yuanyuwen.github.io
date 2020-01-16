@@ -1,16 +1,27 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
-  min-width: 1000px;
+  max-width: 1000px;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
   line-height: 1.42857143;
-  font-family: "PingFangSC-Regular", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
+  font-family: "PingFangSC-Regular", "Helvetica Neue", Helvetica,
+    "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: 14px;
   color: #333;
-  background-image: -webkit-linear-gradient(-179deg, rgba(79,76,74,0.4) 0%, #272524 71%);
-  background-image: linear-gradient(-179deg, rgba(79,76,74,0.4) 0%, #272524 71%);
+  background-image: -webkit-linear-gradient(
+    -179deg,
+    rgba(79, 76, 74, 0.4) 0%,
+    #272524 71%
+  );
+  background-image: linear-gradient(
+    -179deg,
+    rgba(79, 76, 74, 0.4) 0%,
+    #272524 71%
+  );
   background-attachment: fixed;
 }
 
@@ -35,16 +46,17 @@ body {
 }
 
 .clearfix {
-  zoom: 1
+  zoom: 1;
 }
-  
-.clearfix:before,.clearfix:after {
-  content: "";
-  display: table
-}
-  
+
+.clearfix:before,
 .clearfix:after {
-  clear: both
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 .text-nowrap {
@@ -61,9 +73,9 @@ body {
 }
 
 .main {
-  margin: 0 20%;
+  /* margin: 0 20%; */
   background: #eee;
-  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.30);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
   min-height: 100%;
 }
 
@@ -78,7 +90,7 @@ body {
   padding: 0 20px 0 24px;
   line-height: 50px;
   background: #f6f6f6;
-  box-shadow: inset 0 -1px 0 0 rgba(209,209,209,0.50);
+  box-shadow: inset 0 -1px 0 0 rgba(209, 209, 209, 0.5);
   z-index: 10;
 }
 
@@ -99,34 +111,36 @@ body {
 }
 
 #message {
-  background-image: url('../img/all_normal.png')
+  background-image: url("../img/all_normal.png");
 }
 
 #image {
-  background-image: url('../img/image_normal.png')
+  background-image: url("../img/image_normal.png");
 }
 
 #video {
-  background-image: url('../img/video_normal.png')
+  background-image: url("../img/video_normal.png");
 }
 
 #message.selected-item {
-  background-image: url('../img/all_selected.png')
+  background-image: url("../img/all_selected.png");
 }
 
 #image.selected-item {
-  background-image: url('../img/image_selected.png')
+  background-image: url("../img/image_selected.png");
 }
 
 #video.selected-item {
-  background-image: url('../img/video_selected.png')
+  background-image: url("../img/video_selected.png");
 }
 
 .message-text-container {
   margin: 15px 0;
 }
 
-.message-container, .image-container, .video-container {
+.message-container,
+.image-container,
+.video-container {
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -174,7 +188,7 @@ body {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  background-image: url('../img/wechat/person.jpg');
+  background-image: url("../img/wechat/person.jpg");
   color: transparent;
   background-size: 100% auto;
   cursor: pointer;
@@ -187,7 +201,8 @@ body {
   line-height: 0;
   font-size: 0;
   border: 8px solid;
-  border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) rgba(177,227,124,1);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
+    rgba(177, 227, 124, 1);
 }
 
 .arrow-left {
@@ -197,7 +212,8 @@ body {
   line-height: 0;
   font-size: 0;
   border: solid 8px;
-  border-color: rgba(0,0,0,0) rgba(255,255,255,1) rgba(0,0,0,0) rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0) rgba(255, 255, 255, 1) rgba(0, 0, 0, 0)
+    rgba(0, 0, 0, 0);
 }
 
 .message-content {
@@ -266,7 +282,7 @@ body {
   margin-top: 4px;
   width: 40px;
   height: 40px;
-  background-image: url('../img/wechat/link.jpg');
+  background-image: url("../img/wechat/link.jpg");
   background-size: 100%;
 }
 
@@ -274,7 +290,7 @@ body {
   margin-top: 4px;
   width: 40px;
   height: 40px;
-  background-image: url('../img/wechat/wechat-icon.jpg');
+  background-image: url("../img/wechat/wechat-icon.jpg");
   background-size: 100%;
 }
 
@@ -295,7 +311,7 @@ body {
 .red-bag-img {
   width: 40px;
   height: 47px;
-  background-image: url('../img/wechat/redbag.png');
+  background-image: url("../img/wechat/redbag.png");
   background-size: 100%;
 }
 
@@ -335,7 +351,7 @@ body {
   height: 14px;
   margin-top: 1px;
   margin-right: 5px;
-  background-image: url('../img/wechat/redbag.png');
+  background-image: url("../img/wechat/redbag.png");
   background-size: 100%;
   vertical-align: top;
 }
@@ -357,35 +373,38 @@ body {
   width: 50px;
   height: 50px;
   background-size: 100%;
-  background-image: url('../img/wechat/unknown.jpg');
+  background-image: url("../img/wechat/unknown.jpg");
 }
 
 .file-zip {
-  background-image: url('../img/wechat/zip.jpg');
+  background-image: url("../img/wechat/zip.jpg");
 }
 
 .file-txt {
-  background-image: url('../img/wechat/txt.jpg');
+  background-image: url("../img/wechat/txt.jpg");
 }
 
-.file-ppt, .file-pptx {
-  background-image: url('../img/wechat/ppt.jpg');
+.file-ppt,
+.file-pptx {
+  background-image: url("../img/wechat/ppt.jpg");
 }
 
-.file-doc, .file-docx {
-  background-image: url('../img/wechat/doc.jpg');
+.file-doc,
+.file-docx {
+  background-image: url("../img/wechat/doc.jpg");
 }
 
 .file-pdf {
-  background-image: url('../img/wechat/pdf.jpg');
+  background-image: url("../img/wechat/pdf.jpg");
 }
 
-.file-xls, .file-xlsx {
-  background-image: url('../img/wechat/xls.jpg');
+.file-xls,
+.file-xlsx {
+  background-image: url("../img/wechat/xls.jpg");
 }
 
 .file-unknown {
-  background-image: url('../img/wechat/unknown.jpg');
+  background-image: url("../img/wechat/unknown.jpg");
 }
 
 .file-name {
@@ -419,19 +438,19 @@ body {
 }
 
 .voice-right-img {
-  background-image: url('../img/wechat/voice_right.png')
+  background-image: url("../img/wechat/voice_right.png");
 }
 
 .voice-img-playing.voice-right-img {
-  background-image: url('../img/wechat/voice_right_click.gif')
+  background-image: url("../img/wechat/voice_right_click.gif");
 }
 
 .voice-left-img {
-  background-image: url('../img/wechat/voice_left.png')
+  background-image: url("../img/wechat/voice_left.png");
 }
 
 .voice-img-playing.voice-left-img {
-  background-image: url('../img/wechat/voice_left_click.gif')
+  background-image: url("../img/wechat/voice_left_click.gif");
 }
 
 .voice-duration {
@@ -528,7 +547,7 @@ body {
   margin-top: 4px;
   width: 40px;
   height: 40px;
-  background-image: url('../img/wechat/map.jpg');
+  background-image: url("../img/wechat/map.jpg");
   background-size: 100%;
 }
 
@@ -539,7 +558,7 @@ body {
 .transfer-img {
   width: 40px;
   height: 40px;
-  background-image: url('../img/wechat/transfer.png');
+  background-image: url("../img/wechat/transfer.png");
   background-size: 100%;
   vertical-align: top;
   margin-top: 3px;
@@ -548,7 +567,7 @@ body {
 .transfer-ok-img {
   width: 40px;
   height: 40px;
-  background-image: url('../img/wechat/transfer_ok.png');
+  background-image: url("../img/wechat/transfer_ok.png");
   background-size: 100%;
   vertical-align: top;
   margin-top: 3px;
@@ -575,7 +594,8 @@ body {
   display: block;
 }
 
-.video-item-container, .image-item-container {
+.video-item-container,
+.image-item-container {
   width: 33.33333333%;
   box-sizing: border-box;
 }
@@ -584,12 +604,13 @@ body {
   float: left;
   width: 100%;
   line-height: 50px;
-  font-family:PingFangSC-Regular;
-  font-size:16px;
-  color:#333333;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #333333;
 }
 
-.video-item-container > div, .image-item-container > div {
+.video-item-container > div,
+.image-item-container > div {
   margin: 0 5px 5px 0;
 }
 
@@ -603,7 +624,8 @@ body {
   background-position: center;
 }
 
-.video-item, .image-item {
+.video-item,
+.image-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -624,11 +646,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/wechat/playbtn.png');
+  background-image: url("../img/wechat/playbtn.png");
   background-size: 50px auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -645,7 +667,7 @@ body {
 }
 
 .timeline-container::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 6px;
   left: -4px;
@@ -655,24 +677,24 @@ body {
   height: -moz-calc(100% - 15px);
   height: -ms-calc(100% - 15px);
   height: calc(100% - 15px);
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .timeline-year::before {
   display: inline-block;
-  content: ' ';
+  content: " ";
   width: 4px;
   height: 4px;
-  border: 2px solid rgba(0,0,0,0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 6px;
   left: -14px;
 }
 
 .current-timeline-year::before {
-  border: 2px solid rgba(0,0,0,0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: #fee444;
 }
 
@@ -696,22 +718,22 @@ body {
 }
 
 .timeline-month {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   margin-left: 7px;
   line-height: 20px;
   font-size: 12px;
 }
 
 .current-timeline-month {
-  color:#fee444;
+  color: #fee444;
 }
 
 .current-timeline-month::before {
   display: inline-block;
-  content: ' ';
+  content: " ";
   width: 2px;
   height: 2px;
-  border: 2px solid rgba(0,0,0,0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   position: absolute;
   top: 6px;
@@ -719,7 +741,8 @@ body {
   background-color: #fee444;
 }
 
-#prev_image, #next_image {
+#prev_image,
+#next_image {
   position: absolute;
   top: 0;
   width: 50px;
@@ -729,7 +752,7 @@ body {
   border-radius: 50%;
   bottom: 0;
   margin: auto;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   background-size: 60% auto;
   background-repeat: no-repeat;
   background-position: center;
